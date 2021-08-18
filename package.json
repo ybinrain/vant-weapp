@@ -1,7 +1,7 @@
 {
-  "name": "@vant/weapp",
-  "version": "1.8.2",
-  "author": "youzan",
+  "name": "@ybinrain/weapp-v1",
+  "version": "1.0.0",
+  "author": "ybin",
   "license": "MIT",
   "miniprogram": "lib",
   "description": "轻量、可靠的小程序 UI 组件库",
@@ -25,7 +25,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/youzan/vant-weapp.git"
+    "url": "git+ssh://git@github.com:ybinrain/vant-weapp.git"
   },
   "lint-staged": {
     "*.{ts,js}": [
@@ -41,16 +41,16 @@
   "devDependencies": {
     "@vant/cli": "^3.11.2",
     "@vant/icons": "^1.6.0",
+    "@vue/compiler-sfc": "^3.2.1",
     "gulp": "^4.0.2",
     "gulp-insert": "^0.5.0",
     "gulp-less": "^5.0.0",
     "gulp-postcss": "^9.0.0",
     "gulp-rename": "^2.0.0",
-    "miniprogram-api-typings": "^3.1.6",
+    "miniprogram-api-typings": "^3.4.2",
     "miniprogram-ci": "^1.0.27",
     "tscpaths": "^0.0.9",
-    "vue": "^3.2.1",
-    "@vue/compiler-sfc": "^3.2.1"
+    "vue": "^3.2.1"
   },
   "prettier": {
     "singleQuote": true,
