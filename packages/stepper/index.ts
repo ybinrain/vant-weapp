@@ -195,6 +195,8 @@ VantComponent({
 
       const showMinus = value > 0;
 
+      console.log(1);
+
       this.setData({
         showMinus,
       });

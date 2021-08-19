@@ -1,14 +1,10 @@
 {
   "name": "@ybin2021/weapp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "ybin",
   "license": "MIT",
   "miniprogram": "lib",
   "description": "轻量、可靠的小程序 UI 组件库",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
   "scripts": {
     "dev": "node build/dev.js",
     "lint": "eslint ./packages --ext .js,.ts --fix && stylelint \"packages/**/*.less\" --fix",
@@ -60,5 +56,6 @@
     "Chrome >= 53",
     "ChromeAndroid >= 53",
     "iOS >= 9"
-  ]
+  ],
+  "dependencies": {}
 }
