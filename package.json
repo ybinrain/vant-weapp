@@ -1,6 +1,6 @@
 {
   "name": "@ybin2021/weapp",
-  "version": "v1.0.3",
+  "version": "1.0.3",
   "author": "ybin",
   "license": "MIT",
   "miniprogram": "lib",
