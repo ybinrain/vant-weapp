@@ -21,7 +21,7 @@ then
 
   # publish
   git push origin dev
-  git push origin refs/tags/v$VERSION
+  git push origin -f refs/tags/v$VERSION
 
   if [[ $VERSION =~ [beta] ]]
   then
