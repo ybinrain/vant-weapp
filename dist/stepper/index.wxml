@@ -1,7 +1,7 @@
 <wxs src="../wxs/utils.wxs" module="utils" />
 <wxs src="./index.wxs" module="computed" />
 
-<view class="{{ utils.bem('stepper', [theme]) }} custom-class">
+<view class="{{ utils.bem('stepper', [theme]) }} custom-class test">
   <view
     wx:if="{{ showMinus }}"
     data-type="minus"
@@ -16,6 +16,7 @@
     <slot name="plus" />
   </view>
   <input
+    wx:if="{{ showMinus }}"
     type="{{ integer ? 'number' : 'digit' }}"
     class="input-class {{ utils.bem('stepper__input', { disabled: disabled || disableInput }) }}"
     style="{{ computed.inputStyle({ buttonSize, inputWidth }) }}"

@@ -74,8 +74,10 @@ VantComponent({
   },
 
   created() {
+    const showMinus = this.data.value > 0;
     this.setData({
       currentValue: this.format(this.data.value),
+      showMinus,
     });
   },
 
@@ -190,6 +192,12 @@ VantComponent({
       const diff = type === 'minus' ? -this.data.step : +this.data.step;
 
       const value = this.format(add(+this.data.currentValue, diff));
+
+      const showMinus = value > 0;
+
+      this.setData({
+        showMinus,
+      });
 
       this.emitChange(value);
       this.$emit(type);
